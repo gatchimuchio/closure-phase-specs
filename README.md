@@ -1,7 +1,4 @@
-[
-
-![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19729938.svg)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19729938.svg)
 ](https://doi.org/10.5281/zenodo.19729938)
 closure-phase-specs
 Public bilingual specification archive for TCP, Closure Phase Ψ, DDP, and related application examples.
