@@ -3,7 +3,7 @@
 # closure-phase-specs
 ## 認知工学体系・公開原典アーカイブ
 
-本リポジトリは、がっちむち♂による**認知工学体系**の公開可能な原典・翻訳・境界宣言を管理するリポジトリである。
+本リポジトリは、がっちむち♂による**認知工学体系**の公開可能な原典・翻訳・境界宣言・公開適用論文を管理するリポジトリである。
 
 基底言語・規定言語は**日本語**である。
 
@@ -19,7 +19,9 @@
 
 # 現行正本
 
-root に置く理論文書は、現在の公開正本だけである。
+root に置く番号付き文書は、現在の公開正本だけである。
+
+## 基底・中核文書
 
 | 順 | 文書 | 役割 |
 |---|---|---|
@@ -30,7 +32,14 @@ root に置く理論文書は、現在の公開正本だけである。
 | 04 | `04_閉包位相Ψ_v0_8_ja_en.md` | 能力・感情・人格価値から分離した閉包位相Ψの操作的定義 |
 | 05 | `05_神の領域原理（仮）_v0_9_ja_en.md` | 認知後世界像を世界本体へ誤投影しない最上位境界原理 |
 
-推奨読書順も上記 00 → 05 とする。
+## 現行公開適用論文
+
+| 順 | 文書 | 役割 |
+|---|---|---|
+| 06 | `06_トリニティ原理適用_論証監査_v0_2_ja_en.md` | 自然言語の論証を、座標・関係・前提・判定・停止から監査する公開適用例 |
+| 07 | `07_トリニティ原理適用_ゲーム理論と均衡_v0_3_ja_en.md` | ゲーム理論の解を固定前提内の条件付き解として再記述する公開適用例 |
+
+推奨読書順は **00 → 05** を基礎とし、その後、必要に応じて **06 → 07** の適用論文へ進む。
 
 ---
 
@@ -64,6 +73,10 @@ root に置く理論文書は、現在の公開正本だけである。
 神の領域原理（仮）
   = 認知後世界像を認知以前の世界本体へ誤投影しない境界
   = 原理自身も暫定Projectionとして自己適用する
+
+公開適用論文
+  = 上記原理を限定された対象へ射影した実例
+  = 適用論文自体を唯一・最終の形式へ固定しない
 ```
 
 ---
@@ -112,8 +125,19 @@ archive 内の文書には、次のような現行方針と異なる記述が残
 - 旧HDS公開記述
 - 過去の読書順
 - 過去のTCP固定表現
+- 現行版へ改訂済みの旧適用論文
 
 これらは削除・改竄せず履歴として保存するが、**現行正本として参照してはならない**。
+
+旧適用論文の現行対応先：
+
+```text
+archive/legacy/applications/TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md
+  → 06_トリニティ原理適用_論証監査_v0_2_ja_en.md
+
+archive/legacy/applications/TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md
+  → 07_トリニティ原理適用_ゲーム理論と均衡_v0_3_ja_en.md
+```
 
 ---
 
@@ -129,6 +153,7 @@ archive 内の文書には、次のような現行方針と異なる記述が残
 4. 翻訳で欠陥が見つかった場合、日本語原典を先に直す。
 5. HDSは名称のみ公開する。
 6. 旧版と現行正本を混在させない。
+7. 適用Projectionを普遍的・最終的な形式へ昇格させない。
 
 ---
 
@@ -148,7 +173,7 @@ archive 内の文書には、次のような現行方針と異なる記述が残
 
 ## closure-phase-specs — Public Originals Archive for a Cognitive Engineering System
 
-This repository manages the publicly disclosed originals, translations, and boundary declarations of a Cognitive Engineering theoretical system authored by **がっちむち♂**.
+This repository manages the publicly disclosed originals, translations, boundary declarations, and public application papers of a Cognitive Engineering theoretical system authored by **がっちむち♂**.
 
 Japanese is the base and normative language.
 
@@ -162,12 +187,19 @@ Other-language versions are later translations, not independent originals.
 
 ### Current canonical reading order
 
+Core documents:
+
 1. `00_認知工学とは何か_v0_2_ja_en.md`
 2. `01_情報工学における言語基底論_v0_2_ja_en.md`
 3. `02_Umami_Gap_v0_9_ja_en.md`
 4. `03_トリニティ原理_v0_9_ja_en.md`
 5. `04_閉包位相Ψ_v0_8_ja_en.md`
 6. `05_神の領域原理（仮）_v0_9_ja_en.md`
+
+Current public applications:
+
+7. `06_トリニティ原理適用_論証監査_v0_2_ja_en.md`
+8. `07_トリニティ原理適用_ゲーム理論と均衡_v0_3_ja_en.md`
 
 The repository root contains only current public canonical documents. Superseded versions, old applications, and old tools are stored under `archive/` and do not define current specifications.
 
