@@ -6,7 +6,7 @@
 
 本ファイルの参考文献は、本理論群の正しさを権威によって証明するためのものではない。
 
-目的は、既存の仕様言語、工学実務、AIリスク、説明可能性、旨味ギャップの比喩等について、外部の既存用語・資料との座標を確認することである。
+目的は、既存の仕様言語、工学実務、AIリスク、説明可能性、旨味ギャップの比喩、ゲーム理論の標準定義等について、外部の既存用語・資料との座標を確認することである。
 
 本文の中心主張は、これらの文献から演繹されるものではない。
 
@@ -57,7 +57,20 @@
 
 ---
 
-# 4. 公開・引用・ライセンス
+# 4. ゲーム理論・均衡
+
+07番文書『トリニティ原理適用：ゲーム理論と均衡』が既存ゲーム理論との共通座標として参照する基礎文献。
+
+- **Nash, J. F. (1950). “Equilibrium Points in N-Person Games.” Proceedings of the National Academy of Sciences, 36(1), 48–49.**
+- **Nash, J. F. (1951). “Non-Cooperative Games.” Annals of Mathematics, 54(2), 286–295.**
+
+これらはナッシュ均衡の標準的な外部座標であり、トリニティ原理または神の領域原理（仮）の根拠ではない。
+
+07番文書の独自主張は、均衡概念そのものの発見ではなく、**ゲーム理論の出力を固定された前提世界内部の条件付き解として再配置し、前提固定と上位境界を可視化すること**にある。
+
+---
+
+# 5. 公開・引用・ライセンス
 
 - **GitHub Docs — Referencing and citing content**  
   https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content
@@ -67,7 +80,7 @@
 
 ---
 
-# 5. 参照境界
+# 6. 参照境界
 
 外部参考文献を次の目的に使用してはならない。
 
@@ -84,6 +97,8 @@
 
 These references are orientation materials only. They are not evidence that 神の領域原理（仮）, the Trinity Principle, Closure Phase Ψ, or any other document in this repository is true.
 
-They provide coordinates for specification language, engineering practice, AI risk/explainability vocabulary, the historical umami analogy, and public repository conventions.
+They provide coordinates for specification language, engineering practice, AI risk/explainability vocabulary, the historical umami analogy, conventional game-theory definitions, and public repository conventions.
+
+Nash (1950, 1951) is cited only as the conventional coordinate for Nash equilibrium used in document 07. The application paper's distinct contribution is the repositioning of equilibrium as a conditional solution inside a fixed premise-world and the audit of premise fixation and upper boundaries.
 
 External references must not be used as an authority shield, as implied institutional endorsement, or as a way to reconstruct non-public HDS details.
