@@ -2,569 +2,286 @@
 
 # closure-phase-specs
 
-Public bilingual specification archive for TCP, Closure Phase Ψ, 神の領域原理（神域原理）, HDS-adjacent public boundaries, and selected application examples.
+## 認知工学体系・公開仕様アーカイブ
 
-This repository is a public source of record for specification documents, boundary declarations, reading order, and minimal public-shell tools. It is not a peer-reviewed paper, an arXiv substitute, a metaphysical truth claim, or a disclosure of sealed HDS core implementation.
+本リポジトリは、**認知工学**を基底に、情報工学・言語基底、トリニティ原理、閉包位相Ψ、神の領域原理（仮）、および関連する公開適用例を収録する公開仕様アーカイブである。
 
-The correct reading mode is **conformance**, not belief.
-
-```text
-Central question:
-Are the definitions, boundaries, stopping rules, and prohibitions internally coherent
-under the stated scope?
-```
+本リポジトリは査読済み論文集ではない。形而上学的真理の宣言でもない。各文書は、対象・目的・射程に応じて、定義、境界、停止、観測、工学的構成、再監査可能性を記述する。
 
 ---
 
-## Canonical Naming Policy
+## 1. 現行言語方針
 
-The formal name of the upper boundary principle is:
+**日本語を基底言語・規定言語とする。**
 
-```text
-神の領域原理
-```
-
-The short name is:
+原典は必ず日本語で先に成立させる。
 
 ```text
-神域原理
+日本語で思考・生成
+→ 日本語で定義・構造化
+→ 日本語で監査
+→ 日本語原典成立
+→ 実務上必要な場合のみ他言語へ翻訳
+→ 日本語原典との差分監査
 ```
 
-This name remains Japanese in every language context. English explanations may describe the term, but they do not replace it.
+英語その他の言語は、国際公開、規格、API、共同作業その他、実務上やむを得ない場合に使用する。
 
-Deprecated labels:
+多言語版は日本語原典から生成された翻訳・射影であり、独立した正本ではない。意味が衝突する場合は日本語原典を優先する。
 
-```text
-DDP
-Divine Domain Principle
-Shiniki Principle as an English or formal replacement name
-```
-
-These older labels are retained only as historical references in prior version history. They are not canonical names after v0.8.
+詳細は [`PUBLICATION_POLICY.md`](PUBLICATION_POLICY.md) を参照。
 
 ---
 
-## Core Definition of 神の領域原理
+## 2. 最初に読む2本
 
-神の領域原理 is the top-level boundary principle:
+本リポジトリの現在の入口は次の二本である。
+
+### 1. 認知工学とは何か
+
+[`00_認知工学とは何か_v0_1_ja_en.md`](00_認知工学とは何か_v0_1_ja_en.md)
+
+認知工学を、HCIやHuman Factorsの別名ではなく、**あらゆる学問が成立する前段の認知操作を工学対象として扱う基底工学**として再定義する。
+
+主な論点：
+
+- Science / Engineering の分別
+- 認知科学の成立条件批判
+- 認知＝センシング／前処理系
+- メタ認知＝制御／監査系
+- 既存認知工学のラベル崩壊批判
+- 「認知工学はあらゆる学問の祖」という構造的位置づけ
+
+### 2. 情報工学における言語基底論
+
+[`01_情報工学における言語基底論_v0_1_ja_en.md`](01_情報工学における言語基底論_v0_1_ja_en.md)
+
+**世界 → 認知 → 情報**という順序から情報の成立を捉え直し、「情報科学」を独立したScienceとして採用せず、情報の保存・伝達・変換・検索・計算・再利用を**情報工学**として位置づける。
+
+その上で、情報工学上の基底表現として言語を比較し、本理論群における**日本語基底**を規定する。
+
+---
+
+## 3. 推奨読書順
+
+現在の推奨順は次のとおり。
 
 ```text
-Do not project a cognition-after world-image into the pre-cognitive world-itself.
+1. 00_認知工学とは何か_v0_1_ja_en.md
+2. 01_情報工学における言語基底論_v0_1_ja_en.md
+3. 00_Umami_Gap_v0_8_bilingual.md
+4. 02_TCP_v0_8_bilingual.md
+5. 01_Closure_Phase_Psi_v0_7_bilingual.md
+6. 03_神の領域原理_v0_8_bilingual.md
+7. TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md
+8. TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md
+9. REFERENCES.md
+10. ENGINEERING_POSTURE_REFERENCES.md
 ```
 
-More explicitly:
+旧v0.7/v0.8文書の番号は、当時の公開順序を示す**版履歴**として維持している。現在の読書順は本READMEを正とする。
+
+---
+
+## 4. 理論群の位置関係
 
 ```text
-Human beings cannot escape cognition.
-Cognition objectifies, temporalizes, spatializes, causalizes, law-forms, and world-forms.
-Therefore, what is obtained after cognition must not be asserted as the world-itself
-before cognition.
-```
+認知工学
+  ↓
+認知による対象化・差異化・関係化・判断・再認知
+  ↓
+情報の成立
+  ↓
+情報工学
+  ↓
+言語基底
+  ↓
+日本語原典運用
 
-The principle does not claim to explain the world completely. Its function is simpler and stronger:
+認知工学体系の公開原理・定義
+  ├─ トリニティ原理
+  ├─ 閉包位相Ψ
+  └─ 神の領域原理（仮）
 
-```text
-It draws the boundary where assertion must stop.
-```
-
----
-
-## Language Policy
-
-Each core document is bilingual where practical:
-
-1. English projection
-2. Japanese original
-
-The Japanese text is authoritative. The English text is a projection prepared for international readability. If interpretation conflicts arise, the Japanese original controls.
-
-For 神の領域原理, the Japanese name itself is authoritative even in English-facing material.
-
----
-
-## Recommended Reading Order
-
-For first-time readers:
-
-```text
-00_Umami_Gap_v0_8_bilingual.md
-02_TCP_v0_8_bilingual.md
-01_Closure_Phase_Psi_v0_7_bilingual.md
-03_神の領域原理_v0_8_bilingual.md
-TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md
-TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md
-REFERENCES.md
-ENGINEERING_POSTURE_REFERENCES.md
-```
-
-Reason:
-
-1. Umami Gap explains the missing-variable problem behind C / Ψ / E separation.
-2. TCP defines how descriptions close by X / R / M and how SUSPEND functions.
-3. Closure Phase Ψ defines the observable output phase left by closure behavior.
-4. 神の領域原理 defines the upper boundary where cognition-after descriptions must not be projected into the pre-cognitive world-itself.
-5. Application examples show how the framework can be used without turning it into a truth claim or authority shield.
-6. References and engineering-posture notes provide orientation only, not proof.
-
----
-
-## Repository Structure
-
-Current structure:
-
-```text
-README.md
-LICENSE
-REFERENCES.md
-ENGINEERING_POSTURE_REFERENCES.md
-00_Umami_Gap_v0_8_bilingual.md
-01_Closure_Phase_Psi_v0_7_bilingual.md
-02_TCP_v0_8_bilingual.md
-03_神の領域原理_v0_8_bilingual.md
-TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md
-TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md
-tcp_argument_audit_script_v0_1_1/
-  README_SCRIPT.md
-  tcp_argument_audit.py
-```
-
-The repository is intentionally a public specification archive, not a sealed implementation package.
-
----
-
-## Core Documents
-
-| File | Role | Summary |
-|---|---|---|
-| `00_Umami_Gap_v0_8_bilingual.md` | Orientation adapter | Explains the lexical and conceptual compression that makes C / Ψ / E separation necessary. |
-| `02_TCP_v0_8_bilingual.md` | Methodology layer | Defines world-description closure as `W := (X, R, M)` and treats SUSPEND as a valid halt state. |
-| `01_Closure_Phase_Psi_v0_7_bilingual.md` | Definition layer | Defines Ψ as the stable output phase observed under repeated closure-like behavior. |
-| `03_神の領域原理_v0_8_bilingual.md` | Upper boundary layer | Defines the boundary prohibiting projection of cognition-after world-images into the pre-cognitive world-itself. |
-
----
-
-## Supporting Documents and Tools
-
-| File | Role | Summary |
-|---|---|---|
-| `TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md` | TCP application example | Applies TCP to natural-language argument audit. |
-| `TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md` | TCP application example | Rewrites game theory and equilibrium through X / R / M, SUSPEND, Ψ, and 神の領域原理. |
-| `REFERENCES.md` | Orientation references | Collects background references. These are not evidence for the framework. |
-| `ENGINEERING_POSTURE_REFERENCES.md` | Engineering posture anchors | Connects the repository posture to specification, V&V, risk, safety, and audit practices. |
-| `tcp_argument_audit_script_v0_1_1/README_SCRIPT.md` | Tool documentation | Explains the minimal TCP-style argument-audit script. |
-| `tcp_argument_audit_script_v0_1_1/tcp_argument_audit.py` | Minimal script prototype | Demonstrates heuristic PASS / SUSPEND / FAIL audit behavior. |
-
----
-
-## Minimal Concept Map
-
-```text
-神の領域原理
-  = top-level boundary principle
-  = where assertion must stop
-  = prevents cognition-after world-images from being treated as the pre-cognitive world-itself
-
-TCP / Trinity Principle
-  = methodology of closure
-  = how to close descriptions by X / R / M
-  = how to produce SUSPEND instead of forced assertion
-
-Closure Phase Ψ
-  = observable output phase
-  = stable signature left by repeated closure behavior
-
+Human Decision-making System（仮）
+人間意思決定理論（仮）
 HDS
-  = lower operational layer
-  = not disclosed here as a reproducible core implementation recipe
-
-Application examples
-  = public-shell demonstrations
-  = argument audit and game-theory/equilibrium rewriting
+  = 名称のみ公開
 ```
 
 ---
 
-## Core Distinctions
+## 5. 現行名称
 
-### 神の領域原理
+- **神の領域原理（仮）**
+  - 略称：**神域原理（仮）**
+- **トリニティ原理**
+- **閉包位相Ψ**
+- **Human Decision-making System（仮）**
+  - 和名：**人間意思決定理論（仮）**
+  - 略称：**HDS**
 
-神の領域原理 is not a metaphysical claim of final truth.
+`（仮）` を付すのは、神の領域原理（仮）／神域原理（仮）とHDSのみとする。
 
-It is a boundary principle:
+---
 
-```text
-Cognition-after descriptions may be useful, predictive, coherent, and controllable.
-They still must not be asserted as direct access to the pre-cognitive world-itself.
-```
+## 6. HDS公開境界
 
-It handles at least:
-
-- cognition boundary;
-- objectification boundary;
-- time / space / causality / law formation boundary;
-- paradox-as-symptom handling;
-- SUSPEND as a valid halt before overprojection;
-- sealed domains and misuse-prevention boundaries.
-
-### TCP
-
-TCP is a description methodology. It asks:
+HDSについて本リポジトリが現行公開する情報は、原則として名称のみである。
 
 ```text
-What must be fixed before a claim can be considered closed?
+Human Decision-making System（仮）
+人間意思決定理論（仮）
+HDS
 ```
 
-TCP uses:
+内部構造、運用方法、評価設計、判断機構、実装、再現可能なレシピその他は現行公開範囲に含めない。
+
+過去版文書にHDSの役割・構造・実装境界等の記述が残る場合、それらは当該版作成時点の履歴であり、現行HDSの公開仕様を意味しない。
+
+---
+
+## 7. 主要既存文書
+
+| 文書 | 現在の役割 |
+|---|---|
+| `00_Umami_Gap_v0_8_bilingual.md` | C / Ψ / E等の概念圧縮・変数欠落問題への導入 |
+| `02_TCP_v0_8_bilingual.md` | X / R / Mによる閉包とSUSPENDを扱うトリニティ原理の既存公開版 |
+| `01_Closure_Phase_Psi_v0_7_bilingual.md` | 閉包位相Ψの既存公開定義 |
+| `03_神の領域原理_v0_8_bilingual.md` | 認知後世界像を世界本体へ誤投影しない上位境界の既存公開版 |
+| `TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md` | トリニティ原理の自然言語議論監査への公開適用例 |
+| `TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md` | ゲーム理論・均衡概念への公開適用例 |
+
+既存v0.7/v0.8文書には、現行方針以前の**英語先行バイリンガル構成**が残っている。これらは版履歴として保持し、次回改訂版から「日本語原典 → 英語翻訳」へ統一する。
+
+---
+
+## 8. 神の領域原理（仮）の中核
+
+神の領域原理（仮）は、世界を完全に説明する理論ではなく、認知による世界形成を世界本体へ誤投影しないための上位境界原理として扱う。
+
+現在の最小表現：
+
+```text
+認知後に成立した世界像を、認知以前の世界本体として断定してはならない。
+```
+
+機能：
+
+```text
+どこで断定を止めるべきかという境界を示す。
+```
+
+---
+
+## 9. トリニティ原理
+
+既存公開版では、認知後世界記述の閉包を次で扱う。
 
 ```text
 W := (X, R, M)
 ```
 
-where:
+- `X`：対象
+- `R`：関係
+- `M`：同一性・境界・判断・停止等を閉じる機能
 
-- `X` = object / target / scope;
-- `R` = relation / observation / comparison / transition;
-- `M` = closure function / identity / boundary / judgment / stopping rule.
+未閉包・未観測・境界到達時に、強制的な断定ではなく `SUSPEND` を許可する。
 
-If `X`, `R`, or `M` is missing, the claim is treated as unclosed.
-
-### Closure Phase Ψ
-
-Closure Phase Ψ is not a metaphysical substance.
-
-It refers to the externally observable phase that remains when a system repeatedly performs closure-like behavior under fixed conditions.
-
-In simplified terms:
-
-```text
-C = capability / execution basis
-E = emotion / affective interference factor
-Ψ = closure phase / stable signature phase
-```
-
-The purpose is to prevent the collapse of capability, personality, emotion, and intelligence-like behavior into a single vague word.
-
-### HDS
-
-HDS is treated here as a lower operational layer. The repository does not disclose sealed HDS core implementation, reproducible operation recipes, dangerous evaluation designs, or procedures that could enable irreversible manipulation or control.
+なお、この三項記述自体を世界本体の最終形式として扱わない。認知後の有力な記述形式として再監査可能な状態を維持する。
 
 ---
 
-## TCP Application: Argument Audit
+## 10. 閉包位相Ψ
 
-The argument-audit framework is an application example of TCP.
+閉包位相Ψは、固定条件下で反復観測されたときに、閉包的な作用から外部へ残る安定した出力相を扱うための操作的概念である。
 
-It maps TCP into six audit layers:
-
-```text
-Layer 0: Coordinate Anchoring
-Layer 1: Dynamic Transition
-Layer 2: Tacit-Knowledge Audit
-Layer 3: Explicit Argument Audit
-Layer 4: Integrated Judgment
-Layer 5: Reservation / SUSPEND Layer
-```
-
-This example shows how natural-language claims can be audited not only at the surface proposition layer, but also at the level of coordinates, dynamics, tacit assumptions, judgment standards, and stopping conditions.
-
-Example:
-
-```text
-AI will change the world.
-```
-
-This sentence may function as rhetoric. However, as an auditable claim, it remains underclosed unless speaker, agent, object, time, space, purpose, and mechanism are fixed.
-
-Expected decision:
-
-```text
-SUSPEND
-```
+能力、感情、人格価値、内面本質等を一語へ混線させないための分別として使用する。
 
 ---
 
-## Minimal Script: `tcp_argument_audit.py`
+## 11. 公開利用境界
 
-The script is a small public-shell demonstration.
+本リポジトリの文書を、以下へ直接接続しない。
 
-It checks a text for heuristic markers related to:
+- 人間の価値・人格の序列化
+- 不可逆な支配・操作・統治
+- 権威の盾としての利用
+- 感情の完全構造化
+- 自我の作為的設計
+- 人間意思決定の完全な支配・予測・操作
+- 認知後のモデルを世界本体として断定すること
 
-- coordinate anchoring;
-- relation and dynamic transition;
-- tacit knowledge and closure conditions;
-- explicit argument markers;
-- 神の領域原理 boundary-risk markers;
-- reserved or underdefined items;
-- prohibited-use patterns.
-
-It can output:
-
-```text
-PASS
-SUSPEND
-FAIL
-```
-
-Important limitations:
-
-- It is not a truth checker.
-- It is not a formal proof verifier.
-- It is not an LLM judge.
-- It does not perform deep semantic verification.
-- It does not disclose sealed HDS core implementation.
-
-Example usage:
-
-```bash
-python tcp_argument_audit_script_v0_1_1/tcp_argument_audit.py --text "AI will change the world."
-cat input.txt | python tcp_argument_audit_script_v0_1_1/tcp_argument_audit.py --format json
-```
+公開境界の詳細は各文書および `PUBLICATION_POLICY.md` に従う。
 
 ---
 
-## Inviolable Use Policy
+## 12. 参考文献の位置づけ
 
-The documents and examples in this repository prohibit the following uses:
+`REFERENCES.md` および `ENGINEERING_POSTURE_REFERENCES.md` は、既存分野との座標合わせ・用語確認・工学姿勢の参照用である。
 
-1. **Direct superiority scoring**  
-   Ranking, grading, personality assessment, human valuation, selection, or allocation based on these frameworks.
-2. **Irreversible control, manipulation, or governance**  
-   Any use that turns these concepts into tools for domination, coercion, exploitation, or behavioral capture.
-3. **Full structuralization of emotion**  
-   Deterministic recipes, reproducible designs, or procedural generation methods for emotion.
-4. **Ego design or autonomous self-optimization OS design**  
-   Uses that directly support self-purpose formation, self-reinforcement loops, or artificial ego construction.
-5. **Complete algorithmic visualization of human decision-making**  
-   Especially where it enables irreversible manipulation, prediction, or control.
-6. **Use as an authority shield**  
-   These documents must not be used to silence others, win arguments by authority, or claim unquestionable superiority.
-7. **Disclosure of sealed core implementation methods**  
-   HDS core implementation, reproducible operation recipes, dangerous evaluation designs, and sealed practical procedures are outside the public scope.
-8. **Projection beyond the cognition boundary**  
-   A cognition-after model must not be asserted as the pre-cognitive world-itself.
+これらを本理論群の権威的証明として使用しない。
 
 ---
 
-## What This Repository Claims
+## 13. ライセンス
 
-This repository claims that the documents provide:
+文書本文は、個別記載がない限り既存ライセンス方針に従う。
 
-- operational definitions;
-- boundary conditions;
-- stopping rules;
-- terminology separation;
-- conformance-oriented reading procedures;
-- misuse-prevention declarations;
-- public versioned records;
-- public-shell examples of TCP-style audit.
+コードを含む場合は、各コードファイルまたはディレクトリのライセンスを優先する。
 
 ---
 
-## What This Repository Does Not Claim
+# English Translation
 
-This repository does not claim:
+## Cognitive Engineering Public Specification Archive
 
-- metaphysical truth;
-- direct access to the pre-cognitive world-itself;
-- proof of consciousness;
-- proof of ego;
-- proof of intrinsic intelligence;
-- human/AI superiority ranking;
-- universal acceptance;
-- peer-reviewed validation;
-- complete implementation disclosure;
-- that external references prove the framework;
-- that the demonstration script can replace expert audit.
+This repository is organized as a public specification archive for a **Cognitive Engineering** theoretical system, including Information Engineering and language-base theory, the Trinity Principle, Closure Phase Ψ, 神の領域原理（仮）, and selected public applications.
 
----
+The Japanese text above is authoritative. This English section is a translation for external readability.
 
-## Conformance-Oriented Reading
+### Language policy
 
-The recommended evaluation mode is:
+Japanese is the base and normative language. Originals are established in Japanese first. Other languages are produced only when practically necessary and are treated as translations/projections from the Japanese original.
 
-```text
-PASS      = definitions, boundaries, and claims are internally coherent under the stated scope.
-SUSPEND   = the claim is underdefined, insufficiently scoped, unobserved, or approaching 神域 boundary / sealed domain.
-FAIL      = the claim contradicts the use policy, collapses terms, or forces an unclosed claim into assertion.
-```
+See [`PUBLICATION_POLICY.md`](PUBLICATION_POLICY.md).
 
-Readers should not force open terms into conclusions.
+### First two documents
 
-When a claim is unclosed, the correct output is not over-interpretation. The correct output is SUSPEND.
+1. [`00_認知工学とは何か_v0_1_ja_en.md`](00_認知工学とは何か_v0_1_ja_en.md) — redefines Cognitive Engineering as the foundational engineering layer upstream of academic disciplines.
+2. [`01_情報工学における言語基底論_v0_1_ja_en.md`](01_情報工学における言語基底論_v0_1_ja_en.md) — derives Information Engineering from the relation `World → Cognition → Information`, rejects Information Science as the governing category, and specifies Japanese as the base language for this theoretical system.
 
----
-
-## Reference Policy
-
-`REFERENCES.md` and `ENGINEERING_POSTURE_REFERENCES.md` are orientation materials.
-
-They are not proof of the framework.  
-They do not imply endorsement by the cited institutions.  
-They do not override the Japanese original.  
-They do not override the Inviolable Use Policy.
-
-They are included only to clarify conventional specification language, engineering posture, V&V and audit orientation, risk and safety vocabulary, public citation and license conventions, adjacent AI risk/explainability terminology, and background analogies such as the Umami Gap.
-
----
-
-## Citation
-
-Suggested citation format:
+### Current reading order
 
 ```text
-Gacchimuchi. closure-phase-specs: Public bilingual specification archive for TCP, Closure Phase Ψ, 神の領域原理, and related application examples. GitHub repository, version v0.8-bilingual.
+1. Cognitive Engineering foundation
+2. Language-base theory in Information Engineering
+3. Umami Gap
+4. Trinity Principle
+5. Closure Phase Ψ
+6. 神の領域原理（仮）
+7. Public applications
+8. Orientation references
 ```
 
-If a DOI version is used, cite the DOI version instead of the repository URL alone.
+### Current names
 
----
+- **神の領域原理（仮）** / short name **神域原理（仮）**
+- **Trinity Principle / トリニティ原理**
+- **Closure Phase Ψ / 閉包位相Ψ**
+- **Human Decision-making System（仮） / 人間意思決定理論（仮） / HDS**
 
-## License
+Public disclosure of HDS is limited, in principle, to these names. Older HDS-adjacent descriptions remain only as version history and do not define the current public HDS specification.
 
-Unless otherwise noted, the documents in this repository are licensed under:
+### Existing bilingual versions
+
+Existing v0.7/v0.8 documents predate the current Japanese-first policy and retain an English-first layout. They are preserved as versioned history. All new documents and future revisions use:
 
 ```text
-Creative Commons Attribution 4.0 International
-SPDX-License-Identifier: CC-BY-4.0
+Part I. Japanese Original
+Part II. English Translation
 ```
 
-This means the documents may be shared and adapted, including for commercial purposes, provided that appropriate attribution is is given.
+### Repository stance
 
-If source code is included in this repository, code files are preferably licensed separately under:
-
-```text
-Apache License 2.0
-SPDX-License-Identifier: Apache-2.0
-```
-
-The ethical use policy remains an authorial boundary statement and misuse-prevention declaration. It is not a substitute for the license text.
-
----
-
-## Responsibility Boundary
-
-LLMs may assist with drafting, translation, formatting, code generation, and structural review.
-
-Final responsibility for publication, revision, acceptance, rejection, correction, and repository governance belongs to the author.
-
-If errors are found, they should be handled through Issues, Pull Requests, Errata, and versioned Releases.
-
----
-
-# 日本語原典側の説明
-
-## リポジトリ名
-
-```text
-closure-phase-specs
-```
-
-## 概要
-
-本リポジトリは、TCP、閉包位相Ψ、神の領域原理（神域原理）、HDS隣接の公開境界、適用例を扱う公開バイリンガル仕様書アーカイブである。
-
-本リポジトリは査読済み論文ではない。arXiv掲載物でもない。形而上学的真理の主張でもない。封印されたHDS核実装の公開でもない。
-
-正しい読み方は、信仰ではなく適合性である。
-
-```text
-中心の問い：
-定義・境界・停止規則・禁止事項は、指定された射程内で内部整合しているか。
-```
-
----
-
-## 正式名称方針
-
-上位境界原理の正式名称は：
-
-```text
-神の領域原理
-```
-
-略称は：
-
-```text
-神域原理
-```
-
-英語圏向けでも、この日本語名を原典名として維持する。英語説明は補助であり、置換名ではない。
-
----
-
-## 神の領域原理の中核定義
-
-神の領域原理とは、次の最上位境界原理である。
-
-```text
-認知後の世界像を、認知以前の世界本体へ誤投影してはならない。
-```
-
-より明示すると：
-
-```text
-人間は認知から逃れられない。
-認知は、対象化・時間化・空間化・因果化・法則化・世界化を行う。
-したがって、認知後に得られたものを、認知以前の世界本体として断定してはならない。
-```
-
-この原理は世界を説明し尽くす理論ではない。機能はより単純で強い。
-
-```text
-断定を止めるべき境界を示す。
-```
-
----
-
-## 役割分離
-
-```text
-神の領域原理
-  = 最上位境界原理
-  = どこで断定を止めるか
-  = 認知後世界像を認知以前の世界本体として扱うことを止める
-
-TCP / トリニティ原理
-  = 記述方法論
-  = X / R / M によって記述を閉じる
-  = 無理な断定ではなく SUSPEND を出す
-
-閉包位相Ψ
-  = 出力相
-  = 閉包的ふるまいが反復観測下で外部へ残す安定署名
-
-HDS
-  = 下位運用レイヤー
-  = 本リポジトリでは核実装・再現可能手順を公開しない
-```
-
----
-
-## 適合性ベースの読み方
-
-本リポジトリでは、評価軸を真偽ではなく適合性に置く。
-
-```text
-PASS
-  定義・境界・主張が、指定された射程内で内部整合している。
-
-SUSPEND
-  未定義・未観測・未閉包・神域境界接近・危険領域接近により、断定を止めるべき状態。
-
-FAIL
-  共通誓約に違反している、用語を混線している、未閉包の主張を断定している状態。
-```
-
-未閉包の問いに対して、無理に答えを出してはならない。正しい出力は SUSPEND である。
-
----
-
-## 引用
-
-推奨引用例：
-
-```text
-Gacchimuchi. closure-phase-specs: Public bilingual specification archive for TCP, Closure Phase Ψ, 神の領域原理, and related application examples. GitHub repository, version v0.8-bilingual.
-```
-
-DOI版を利用する場合は、GitHub URL単体ではなくDOI付きの版を引用する。
+The repository does not present its models as direct access to a pre-cognitive world-itself, does not use its frameworks for superiority ranking or irreversible manipulation, and preserves stopping/reopening where claims remain underdefined or cross a cognition boundary.
