@@ -1,59 +1,105 @@
-# 公開・言語・名称ポリシー
+# 公開・言語・命名ポリシー
+## Publication / Language / Naming Policy
 
-**版**：v1.0  
+**版**：v1.1  
 **著者**：がっちむち♂  
-**基底言語**：日本語  
+**規定言語**：日本語  
 
-本ファイルは、本リポジトリにおける現行の公開・言語・名称方針を固定する。過去版文書に異なる運用記述が残る場合、本ポリシーを現行運用として優先する。
+本書は `closure-phase-specs` における現行公開方針を規定する。
 
 ---
 
-## 1. 日本語基底
+# 1. 日本語を基底・規定言語とする
 
-本理論群の基底言語・規定言語は日本語とする。
+本理論群では、日本語を唯一の基底言語・規定言語とする。
 
-運用順序は次である。
+原則となる生成順序は次である。
 
 ```text
-日本語で思考・生成
+日本語で理論生成
 → 日本語で定義・構造化
-→ 日本語で監査
+→ 日本語で監査・改訂
 → 日本語原典成立
-→ 実務上必要な場合のみ他言語へ翻訳
-→ 日本語原典との差分監査
+→ 実務上必要な場合のみ多言語へ翻訳
 ```
 
-英語その他の言語は、国際公開、規格、API、共同作業その他、実務上やむを得ない場合にのみ使用する。
+多言語版は日本語原典から生成された翻訳・射影であり、独立した正本ではない。
 
-多言語版は日本語原典から生成された翻訳・射影であり、独立した正本ではない。意味が衝突する場合、日本語原典を優先する。
+意味が衝突した場合、日本語原典を優先する。
 
-翻訳時に原典の欠陥が発見された場合、翻訳側で補完して閉じない。日本語原典を再監査・改訂した後、改訂版から再翻訳する。
-
----
-
-## 2. 正式名称
-
-現行名称は次のとおり。
-
-- **神の領域原理（仮）**
-  - 略称：**神域原理（仮）**
-- **トリニティ原理**
-- **閉包位相Ψ**
-- **Human Decision-making System（仮）**
-  - 和名：**人間意思決定理論（仮）**
-  - 略称：**HDS**
-
-`（仮）` を付すのは、神の領域原理（仮）／神域原理（仮）と HDS のみとする。
-
-英語圏向けでも、日本語の正式名称を無理に置換名へ変えない。必要な英語は説明・翻訳として扱う。
+翻訳時に未定義・矛盾・関係欠落・説明不足が見つかった場合、翻訳側で勝手に補完せず、日本語原典を先に再監査・改訂する。
 
 ---
 
-## 3. HDS公開境界
+# 2. 多言語使用条件
 
-HDSについて一般公開する情報は、原則として名称のみとする。
+英語その他の言語は、国際公開、外部規格、API、応募、共同作業その他、実務上必要な場合に限って使用する。
 
-公開可能な名称：
+「国際公開するから最初から英語で原典を作る」という順序は採用しない。
+
+---
+
+# 3. 正式名称
+
+現行の名称は次の通りとする。
+
+## 3.1 神の領域原理（仮）
+
+```text
+正式名称：神の領域原理（仮）
+略称：神域原理（仮）
+```
+
+英語環境でも日本語名を正式名として保持する。説明用の英訳は置換名ではない。
+
+`（仮）` は、本原理自身を最終真理へ固定しない構造的な暫定性を示すため保持する。
+
+## 3.2 トリニティ原理
+
+```text
+正式名称：トリニティ原理
+英語説明：Trinity Principle
+```
+
+`（仮）` は付さない。
+
+## 3.3 閉包位相Ψ
+
+```text
+正式名称：閉包位相Ψ
+英語説明：Closure Phase Ψ
+```
+
+`（仮）` は付さない。
+
+## 3.4 HDS
+
+```text
+正式名称：Human Decision-making System（仮）
+和名：人間意思決定理論（仮）
+略称：HDS
+```
+
+`（仮）` を保持する。
+
+---
+
+# 4. （仮）の適用範囲
+
+本理論群で `（仮）` を名称に付すのは、原則として次の二系統のみである。
+
+1. 神の領域原理（仮）／神域原理（仮）
+2. Human Decision-making System（仮）／人間意思決定理論（仮）
+
+その他の理論名には、個別の明示指示がない限り `（仮）` を付さない。
+
+---
+
+# 5. HDS公開境界
+
+HDSについて現行公開範囲に含める情報は、原則として名称のみである。
+
+公開可：
 
 ```text
 Human Decision-making System（仮）
@@ -61,108 +107,114 @@ Human Decision-making System（仮）
 HDS
 ```
 
-本リポジトリでは、HDSの内部構造、運用手順、評価設計、判断機構、実装、再現可能なレシピその他の詳細を現行公開範囲に含めない。
+現行公開範囲外：
 
-過去版文書にHDSの役割・相・層・実装境界等に関する記述が残る場合、それらは当該版作成時点の履歴として扱い、現行HDSの公開仕様とはみなさない。
+- 内部構造
+- 相・層・ループ
+- 判断機構
+- 評価設計
+- 運用手順
+- 実装
+- 再現可能なレシピ
+- 内部パラメータ・閾値・検出器
+- その他、名称を超えて内部作用を再構成できる情報
+
+旧版にこれらの記述が存在する場合、その記述は歴史資料として `archive/` に保存し、現行仕様として扱わない。
 
 ---
 
-## 4. 既存バイリンガル版の扱い
+# 6. root と archive の分離
 
-2026-07-07以前に作成された既存バイリンガル文書には、英語を先に置くレイアウトが残っている。
+リポジトリrootには現行公開正本だけを置く。
 
-これらは版履歴として保持する。
-
-現行方針では、新規文書および次回改訂版から、必ず次の順序を採用する。
+旧版、旧名称、旧読書順、旧適用例、旧ツールは `archive/` へ退避する。
 
 ```text
-Part I. 日本語原典
-Part II. English Translation
+root    = current canonical public set
+archive = historical / superseded set
 ```
+
+archive 内の記述は、当時の状態を保持するため原則として無言修正しない。
+
+ただし archive であることを明示し、現行正本との混同を防ぐ。
 
 ---
 
-## 5. 理論群の上位位置づけ
+# 7. 版更新
 
-本リポジトリの理論群は、認知工学体系として整理する。
+理論の意味が変化する更新は版番号を上げる。
 
-最初に読むべき基底文書は次の二本である。
+誤字脱字・リンク修正等の意味非変更修正でも、公開履歴上必要ならパッチ版または改訂履歴を残す。
 
-1. `00_認知工学とは何か_v0_1_ja_en.md`
-2. `01_情報工学における言語基底論_v0_1_ja_en.md`
+現在の正本を過去版へ無言上書きしない。
 
-その後、各公開原理・定義・適用例へ進む。
+---
+
+# 8. 著者表記
+
+公開文書の著者表記は、原則として次に統一する。
+
+```text
+がっちむち♂
+```
+
+英語翻訳部でも著者名を `Gacchimuchi` 等へ置換せず、`がっちむち♂` を保持する。
+
+---
+
+# 9. 参照文献の位置づけ
+
+外部参考文献は、座標合わせ、既存用語、歴史的背景、工学上の隣接概念を確認するために利用する。
+
+本理論群の正しさを権威によって証明するためのものではない。
+
+---
+
+# 10. 現行正本順
+
+```text
+00_認知工学とは何か_v0_2_ja_en.md
+01_情報工学における言語基底論_v0_2_ja_en.md
+02_Umami_Gap_v0_9_ja_en.md
+03_トリニティ原理_v0_9_ja_en.md
+04_閉包位相Ψ_v0_8_ja_en.md
+05_神の領域原理（仮）_v0_9_ja_en.md
+```
 
 ---
 
 # English Translation
 
-# Publication, Language, and Naming Policy
+## Publication / Language / Naming Policy
 
-**Version**: v1.0  
-**Author**: Gacchimuchi♂  
-**Authoritative language**: Japanese  
+Japanese is the sole base and normative language of this theoretical system.
 
-This file defines the current publication, language, naming, and disclosure policy of the repository. If older versioned documents contain different operational wording, this file controls current repository practice.
-
-## 1. Japanese-first rule
-
-Japanese is the base and normative language of this theoretical system.
-
-The required process is:
+The required order is:
 
 ```text
-Think and generate in Japanese
-→ Define and structure in Japanese
-→ Audit in Japanese
+Generate in Japanese
+→ Define and audit in Japanese
 → Establish Japanese original
 → Translate only when practically necessary
-→ Audit differences against the Japanese original
 ```
 
-Other languages are used only when practically required for international publication, standards, APIs, collaboration, or equivalent external needs.
+Translations are projections from the Japanese original, not independent originals.
 
-Translations are projections generated from the Japanese original, not independent originals. If meaning conflicts, the Japanese original controls.
-
-## 2. Current names
-
-- **神の領域原理（仮）** — short name: **神域原理（仮）**
-- **Trinity Principle / トリニティ原理**
-- **Closure Phase Ψ / 閉包位相Ψ**
-- **Human Decision-making System（仮）** — Japanese name: **人間意思決定理論（仮）** — abbreviation: **HDS**
-
-The provisional marker `（仮）` is used only for 神の領域原理（仮）／神域原理（仮） and HDS.
-
-## 3. HDS disclosure boundary
-
-Public disclosure of HDS is limited, in principle, to the names:
+Canonical names:
 
 ```text
+神の領域原理（仮） / 神域原理（仮）
+トリニティ原理 / Trinity Principle
+閉包位相Ψ / Closure Phase Ψ
 Human Decision-making System（仮）
 人間意思決定理論（仮）
 HDS
 ```
 
-Internal structure, operational procedures, evaluation design, judgment mechanisms, implementation, reproducible recipes, and related details are outside the current public scope.
+Only 神の領域原理（仮） and HDS carry `（仮）` as part of their current names.
 
-Older versioned descriptions of HDS are retained only as historical artifacts of those versions and do not define current public HDS specifications.
+For HDS, only the names are public. Internal structure, phases, loops, evaluation design, operation, implementation, reproducible recipes, thresholds, and equivalent reconstructive details are outside the current public scope.
 
-## 4. Existing bilingual documents
+The repository root contains only current canonical public documents. Superseded material is stored under `archive/`.
 
-Some documents created before the current Japanese-first policy retain an English-first bilingual layout. They are preserved as version history.
-
-All new documents and future revisions must use:
-
-```text
-Part I. Japanese Original
-Part II. English Translation
-```
-
-## 5. Upstream positioning
-
-The repository is organized as a Cognitive Engineering theoretical system. The first two foundational documents are:
-
-1. `00_認知工学とは何か_v0_1_ja_en.md`
-2. `01_情報工学における言語基底論_v0_1_ja_en.md`
-
-Readers should proceed from these foundations to the public principles, definitions, and applications.
+The public author name is `がっちむち♂` in all language sections.
