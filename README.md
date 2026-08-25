@@ -1,9 +1,11 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19729938.svg)](https://doi.org/10.5281/zenodo.19729938)
 
-# closure-phase-specs
-## 認知工学体系・公開原典アーカイブ
+# cognitive-engineering-foundations
+## 認知工学基底理論体系・公開原典アーカイブ
 
-本リポジトリは、がっちむち♂による**認知工学体系**の公開可能な原典・翻訳・境界宣言・適用論文を管理するリポジトリである。
+本リポジトリは、がっちむち♂による**認知工学体系の基底理論・公開可能な原典・翻訳・境界宣言・適用論文**を管理するリポジトリである。
+
+リポジトリ名 `cognitive-engineering-foundations` は、本体系を閉包位相Ψやトリニティ原理の個別仕様集ではなく、**認知工学を上位に置く基底理論体系**として位置づける現在の構造を表す。
 
 基底言語・規定言語は**日本語**である。
 
@@ -136,6 +138,8 @@ HDSの内部構造、相、層、ループ、判断機構、評価設計、運�
 
 `archive/` は旧版・旧適用例・旧ツールを保存する履歴領域である。
 
+本リポジトリは旧称 `closure-phase-specs` から `cognitive-engineering-foundations` へ改称された。archive 内には旧リポジトリ名を含む当時の文書が残り得るが、それらは歴史状態として保持する。
+
 archive 内の文書には、現行方針と異なる、
 
 - 英語先行レイアウト
@@ -165,9 +169,11 @@ archive 内の文書には、現行方針と異なる、
 
 # English Translation
 
-## closure-phase-specs — Public Originals Archive for a Cognitive Engineering System
+## cognitive-engineering-foundations — Cognitive Engineering Foundations
 
-This repository manages the publicly disclosed originals, translations, boundaries, and application papers of a Cognitive Engineering theoretical system authored by **がっちむち♂**.
+This repository manages the publicly disclosed foundational theories, originals, translations, boundaries, and application papers of a Cognitive Engineering theoretical system authored by **がっちむち♂**.
+
+The repository was renamed from `closure-phase-specs` to `cognitive-engineering-foundations` to reflect its current scope: the repository is no longer organized around one closure-phase specification family, but around Cognitive Engineering as the upstream theoretical field.
 
 Japanese is the base and normative language.
 
