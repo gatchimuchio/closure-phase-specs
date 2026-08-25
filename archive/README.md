@@ -1,7 +1,9 @@
 # archive
 ## 旧版・旧適用例・旧ツール
 
-このディレクトリは、`closure-phase-specs` の過去版・旧適用例・旧ツールを履歴として保存する領域である。
+このディレクトリは、`cognitive-engineering-foundations` の過去版・旧適用例・旧ツールを履歴として保存する領域である。
+
+本リポジトリは旧称 `closure-phase-specs` から `cognitive-engineering-foundations` へ改称された。archive 内には旧リポジトリ名を含む当時の文書が残るが、それらは改称前の歴史状態として保持する。
 
 **archive 内の文書は現行正本ではない。**
 
@@ -15,13 +17,11 @@ archive 内の旧版は、歴史状態を保存するため原則として無言
 
 ## 旧適用論文の現行対応先
 
-```text
-legacy/applications/TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md
-  → ../../06_トリニティ原理適用_論証監査_v0_2_ja_en.md
+- `legacy/applications/TCP_APPLICATION_ARGUMENT_AUDIT_FRAMEWORK.md`  
+  → [`../06_トリニティ原理適用_論証監査_v0_3_ja_en.md`](../06_トリニティ原理適用_論証監査_v0_3_ja_en.md)
 
-legacy/applications/TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md
-  → ../../07_トリニティ原理適用_ゲーム理論と均衡_v0_3_ja_en.md
-```
+- `legacy/applications/TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md`  
+  → [`../07_トリニティ原理適用_ゲーム理論と均衡_v0_4_ja_en.md`](../07_トリニティ原理適用_ゲーム理論と均衡_v0_4_ja_en.md)
 
 旧適用論文には英語先行、旧神域表記、三項の固定的表現等が残るため、現行の引用・参照にはroot側を使用すること。
 
@@ -29,10 +29,12 @@ legacy/applications/TCP_APPLICATION_GAME_THEORY_EQUILIBRIUM.md
 
 # English Note
 
-This directory stores historical and superseded material.
+This directory stores historical and superseded material for `cognitive-engineering-foundations`.
+
+The repository was formerly named `closure-phase-specs`. Historical files may retain that former name intentionally as part of the preserved record.
 
 Files under `archive/` are not current canonical specifications. They may contain old language order, naming, reading order, disclosure boundaries, application examples, or tools.
 
 For current public specifications and applications, use the numbered documents in the repository root and `PUBLICATION_POLICY.md`.
 
-Current replacements for the two legacy TCP application papers are documents `06` and `07` in the repository root.
+Current replacements for the two legacy TCP application papers are documents `06` v0.3 and `07` v0.4 in the repository root.
