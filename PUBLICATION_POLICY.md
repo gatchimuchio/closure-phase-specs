@@ -1,11 +1,13 @@
 # 公開・言語・命名・理論状態ポリシー
 ## Publication / Language / Naming / Theory-State Policy
 
-**版**：v1.2  
+**版**：v1.2.1  
 **著者**：がっちむち♂  
 **規定言語**：日本語  
 
-本書は `closure-phase-specs` における現行公開方針を規定する。
+本書は `cognitive-engineering-foundations` における現行公開方針を規定する。
+
+旧リポジトリ名 `closure-phase-specs` は履歴上の名称としてのみ扱い、現行名称として使用しない。
 
 ---
 
@@ -239,6 +241,8 @@ archive = historical / superseded set
 
 archive 内の記述は、当時の状態を保持するため原則として無言修正しない。
 
+旧称 `closure-phase-specs` を含むarchive内文書は、改称前の歴史状態として保持する。
+
 ---
 
 # 9. 版更新
@@ -297,6 +301,8 @@ archive 内の記述は、当時の状態を保持するため原則として無
 # English Translation
 
 ## Publication / Language / Naming / Theory-State Policy
+
+This policy governs the current public repository `cognitive-engineering-foundations`. The former name `closure-phase-specs` is historical only.
 
 Japanese is the sole base and normative language. Originals are established in Japanese before any downstream translation.
 
